@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display:grid;
+    
+}
+.grid-container>div{
+    border:solid
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+}
+
+.nav>div{
+    border: solid 2px red;
+}
+
+
+
+
+
+
+
+
