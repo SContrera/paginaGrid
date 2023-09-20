@@ -18,15 +18,21 @@ body {
 }
 
 .grid-container>div {
+    background-color: rgba(0, 0, 0, 0.245);
     border:solid 1px red
 }
 
 .head{
+    display:grid;
+    grid-template-columns: auto auto auto;
     grid-column: 1 / 4;
 }
 
 .nav{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
     grid-column: 1/4;
+    color: blanchedalmond;
 }
 
 .main{
@@ -40,5 +46,5 @@ grid-row-start: 3;
 
 .futer{
     grid-column: 1/ span 3;
-    
+   
 }
