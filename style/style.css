@@ -1,50 +1,74 @@
 * {
-    box-sizing: border-box;  
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
-    background: url(../img/fondo.jpg) no-repeat fixed ;
+    background: url(../img/fondo.jpg) no-repeat fixed;
     background-size: cover;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
-    grid-template-columns: auto auto auto ;
-    border: solid 1px black;
-    gap: 10px 20px;
+    grid-template-columns: auto auto auto;
     font-size: 30px;
     padding: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.255);
+    color: blanchedalmond;
 }
 
-.grid-container>div {
-    background-color: rgba(0, 0, 0, 0.245);
-    border:solid 1px red
-}
 
-.head{
-    display:grid;
+.head {
+    display: grid;
     grid-template-columns: auto auto auto;
     grid-column: 1 / 4;
 }
 
-.nav{
-    display:grid;
-    grid-template-columns: auto auto auto auto;
+.nav {
+    display: grid;
+    grid-template-columns: 10% 30% 30% 30%;
     grid-column: 1/4;
-    color: blanchedalmond;
+    padding: 5px;
+    background-color: black;
+    text-align: center;
+    border: solid 1px white;
+    font-size: 1.5rem;
+
 }
 
-.main{
-grid-column: 2 / 4;
-grid-row-start: 3;
+
+.main {
+    grid-column: 2 / 4;
+    grid-row: 3/4;
+    
+}
+.main>p{
+    background-color: rgba(0, 0, 0, 0.129);
+    font-size: 1.1rem;
 }
 
-.menu{
+.menu {
     grid-row-start: 3 / 4;
+    padding: 5px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.303);
+    border: solid 1px white;
 }
 
-.futer{
+
+
+.futer {
     grid-column: 1/ span 3;
-   
+    background-color: rgba(0, 0, 0, 0.37);
+    font-size: 16px;
+    gap: 20px;
+
+}
+.fut{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
