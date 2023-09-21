@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: no-repeat fixed;
+    background:url(../img/fondo1.jpg) no-repeat fixed;
     background-size: cover;
     min-height: 100%;
     font-family: "Public Sans", sans-serif;
@@ -21,7 +21,7 @@ body {
 }
 
 .grid-container>* {
-    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.38);
+    box-shadow: -1px 1px 7px 0px rgb(0, 0, 0);
     border-radius: 10px;
     padding: 10px;
     text-align: center;
@@ -29,28 +29,39 @@ body {
 
 .header {
     grid-area: header;
-    background-color: rgb(246, 255, 119);
+    background-color: rgba(0, 0, 0, 0.38);
 }
 
 .navbar {
     grid-area: navbar;
-    background-color: rgb(110, 255, 255);
+    background-color: rgba(0, 0, 0, 0.38);
+    font-size: 0.5rem;
 }
 
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: start;
+    gap: 10px;
+
+    border: solid 1px;
+}
 
 .sidebar {
     grid-area: sidebar;
-    background-color: rgb(255, 114, 217);
+    background-color: rgba(0, 0, 0, 0.38);
 }
 
 .main {
     grid-area: main;
-    background-color: rgb(127, 255, 88);
+    background-color: rgba(0, 0, 0, 0.38);
 }
 
 .footer {
     grid-area: footer;
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0.38);
+    color: aliceblue;
 }
 
 
@@ -102,7 +113,7 @@ body {
 
             'header     header      header' 100px
             'navbar     main        sidebar' auto
-            'footer     footer      footer' 100px /
+            'footer     footer      footer' 40px /
               15%        auto         10%;
     }
 
