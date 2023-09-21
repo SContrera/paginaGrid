@@ -83,8 +83,8 @@ body {
         'sidebar main' auto
         'footer footer' auto /
          200px     auto                 ;
-
+         
     }
-
+    .main>div{ width: auto;}
 }
     
